@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      .a4 {
+        background-color: #fcfcfc;
+        width: 1040px;
+        height: 1515px;
+        border: 1px solid black;
+      }
+      a {
+        color: white;
+      }
+
+      .b1 {
+        float: left;
+        margin: 30px 8px 10px 70px;
+        border: 1px dotted black;
+        border-radius: 5px;
+        box-shadow: 9px 9px 8px rgb(112, 103, 103);
+        color: white;
+        background-color: #110425;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%236f6e72' fill-opacity='0.4'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .b2 {
+        float: right;
+        margin: 45px 80px 10px 8px;
+        border: 1px dotted black;
+        border-radius: 5px;
+        box-shadow: 9px 9px 8px rgb(112, 103, 103);
+      }
+
+      h1 {
+        margin: 10px 0px 20px 0px;
+      }
+
+      h2,
+      h4,
+      h3,
+      h5 {
+        margin: 0px;
+      }
+
+      .name {
+        padding: 5px 25px;
+      }
+
+      .info {
+        padding-top: 5px;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 10px;
+      }
+
+      .contact {
+        padding: 5px 25px;
+        color: white;
+        background-color: #301b50;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%23959399' fill-opacity='0.4'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .c2 {
+        margin-top: 200px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .c3 {
+        margin: 0px 50px;
+        width: 420px;
+        float: left;
+      }
+
+      .c4 {
+        margin: 0px 50px;
+        width: 420px;
+        float: right;
+      }
+
+      .ch1 {
+        background-color: rgb(121, 119, 119);
+        padding-top: 2px;
+        padding-left: 10px;
+        padding-bottom: 2px;
+      }
+
+      .cd1 {
+        padding: 20px 20px 0px 20px;
+      }
+
+      .c3-1-1 {
+        margin: 15px 0px 23px 0px;
+        border: 1px dotted black;
+        border-radius: 5px;
+        box-shadow: 9px 9px 8px rgb(112, 103, 103);
+        background-color: #cccccc;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23ffffff' fill-opacity='0.19'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+      .c3-1 {
+        margin: 23px 0px;
+        border: 1px dotted black;
+        border-radius: 5px;
+        box-shadow: 9px 9px 8px rgb(112, 103, 103);
+        background-color: #cccccc;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23ffffff' fill-opacity='0.19'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+    </style>
+    <title>resume</title>
+  </head>
+
+  <body>
+    <div class="a4">
+      <div>
+        <div class="b1">
+          <div class="name" style="font: #ffffff">
+            <h1 style="font-size: 40px">
+              <b><i>&nbsp;&nbsp;Akshat jain</i></b>
+            </h1>
+          </div>
+          <div class="info">
+            <table>
+              <tr>
+                <td>
+                  <h3>Address :</h3>
+                </td>
+                <td>
+                  <h5 style="font-size: 14px">
+                    40 gadipura near jain mandir<br />
+                    etawah Uttar Pradesh
+                  </h5>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="b2">
+          <div class="contact">
+            <table>
+              <tr>
+                <td>
+                  <h3>Contact :</h3>
+                </td>
+                <td>
+                  <h4>+91 9997537935 ,</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>E-mail :</h3>
+                </td>
+                <td>
+                  <h4>
+                    <a href="aksej18@gmail.com" target="blank"
+                      >aksej18@gmail.com</a
+                    >
+                  </h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>LinkedIn :</h3>
+                </td>
+                <td>
+                  <h4>
+                    <a
+                      href="https://www.linkedin.com/in/aksaht-jain-518803204"
+                      target="blank"
+                      >https://www.linkedin.com/in/aksaht-jain-518803204/</a
+                    >
+                  </h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>GitHub :</h3>
+                </td>
+                <td>
+                  <h4>
+                    <a href="https://github.com/15akshh07/" target="blank"
+                      >https://github.com/aksh07/</a
+                    >
+                  </h4>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="c2">
+        <div class="ch1">
+          <h2>
+            <b><u>Profile</u> :</b>
+          </h2>
+        </div>
+        <div class="cd1">
+          An energetic computer science engineer with expertise in C, python,
+          HTML5, CSS3 and Bootstrap5, having a command over with a good
+          knowledge of C++, JavaScript, MySQL and php.
+        </div>
+      </div>
+      <div class="c3">
+        <div class="c3-1-1">
+          <div class="ch1">
+            <h2>
+              <b><u>Education</u> :</b>
+            </h2>
+          </div>
+          <div class="cd1">
+            <ul>
+              <li style="font-size: 20px">
+                <b>Pursuing Bachelor of Technology (C.S.E.)</b>
+              </li>
+              <p>CCSIT, TEERTHANKER MAHAVEER UNIVERSITY, MORADABAD,(U.P.).</p>
+              <li style="font-size: 20px"><b>Senior Secondary (XII)</b></li>
+              <p>GYAN STHALI ACADEMY,ETAWAH,(U.P.) (C.B.S.E.) in 2019.</p>
+              <li style="font-size: 20px"><b>Secondary (X)</b></li>
+              <p>GYAN STHALI ACADEMY,ETAWAH,(U.P.) (C.B.S.E.) in 2017.</p>
+            </ul>
+          </div>
+        </div>
+        <div class="c3-1">
+          <div class="ch1">
+            <h2>
+              <b><u>Internship</u> :</b>
+            </h2>
+          </div>
+          <div class="cd1" style="padding: 5px 0px">
+            <ul>
+              <li style="font-size: 20px"><b>Web Development</b></li>
+              <p>Twowaits Technologies Pvt. Ltd || 01/07/2022 - 31/07/2022</p>
+              <li style="font-size: 20px"><b>Campus Brand Ambassador </b></li>
+              <p>Casio Private Limited India || 11/09/2020 - 10/10/2020</p>
+            </ul>
+          </div>
+        </div>
+        <div class="c3-1">
+          <div class="ch1">
+            <h2>
+              <b><u>Personal Projects</u> :</b>
+            </h2>
+          </div>
+          <div class="cd1" style="padding: 0px">
+            <ul>
+              <li style="font-size: 20px">
+                <b>Website for ed-tech company</b>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXsdrAg0QsIN-5Kyz9BYfHygQjuLxFL8ucQ&usqp=CAU"
+                    style="width: 15px; height: 15px; padding: 5px 0px 0px 5px"
+                  />
+                </a>
+              </li>
+              <ul style="padding-right: 10px">
+                <li>
+                  <b>Technology :</b>HTML5, CSS3, JavaScript, MySQL & php.
+                </li>
+                <li><b>Software :</b> VS Code.</li>
+                <li>
+                  <b>Page Include :</b> LogIn/SignUp, About Us, Services Page &
+                  Contact Us.
+                </li>
+              </ul>
+              &nbsp;
+              <li style="font-size: 20px">
+                <b>Movie Recommendation</b>
+                <a
+                  href="https://github.com/15Shubh07/movie_recommendation"
+                  target="_blank"
+                >
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXsdrAg0QsIN-5Kyz9BYfHygQjuLxFL8ucQ&usqp=CAU"
+                    style="width: 15px; height: 15px; padding: 5px 0px 0px 5px"
+                  />
+                </a>
+              </li>
+              <ul>
+                <li><b>Technology :</b> Machine Learning.</li>
+                <li><b>Software :</b> Jupyter.</li>
+                <li><b>Input :</b> One movie name.</li>
+                <li><b>Output :</b> Five next movie recommendation.</li>
+              </ul>
+              &nbsp;
+              <li style="font-size: 20px">
+                <b>Virtual Assistant for Laptop/PC</b>
+                <a
+                  href="https://github.com/15Shubh07/Virtual_Assistant"
+                  target="_blank"
+                >
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXsdrAg0QsIN-5Kyz9BYfHygQjuLxFL8ucQ&usqp=CAU"
+                    style="width: 15px; height: 15px; padding: 5px 0px 0px 5px"
+                  />
+                </a>
+              </li>
+              <ul>
+                <li><b>Language :</b> Python.</li>
+                <li><b>Software :</b> VS Code.</li>
+                <li><b>Input :</b> Give command.</li>
+                <li><b>Output :</b> Perform work as according to input.</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+
+        <div class="c3-1">
+          <div class="ch1">
+            <h2>
+              <b><u>Soft Skills</u> :</b>
+            </h2>
+          </div>
+          <div class="cd1" style="padding: 0px 10px">
+            <ul>
+              <li style="font-size: 20px"><b>Teamwork</b></li>
+              <li style="font-size: 20px"><b>Problem Solving</b></li>
+              <!-- <li style="font-size : 20px"><b>Flexiblity</b></li>
+                        <li style="font-size : 20px"><b>Self Management</b></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="c4">
+        <div class="c3-1-1">
+          <div class="ch1">
+            <h2>
+              <b><u>Trainings</u> :</b>
+            </h2>
+          </div>
+          <div class="cd1">
+            <ul>
+              <li style="font-size: 20px"><b>Programming with Python</b></li>
+              <p>(Top performer) - Internshala || 01/01/2021 - 12/02/2021</p>
+              <li style="font-size: 20px"><b>Web Development</b></li>
+              <p>Internshala || 27/09/2020 - 15/10/2020</p>
+              <li style="font-size: 20px"><b>C Programming Language</b></li>
+              <p>
+                Cyber Computer Education Society, Aligarh || 24/06/2019 -
+                23/09/2019
+              </p>
+            </ul>
+          </div>
+        </div>
+        <div class="c3-1">
+          <div class="ch1">
+            <h2>
+              <b><u>Skills</u> :</b>
+            </h2>
+          </div>
+          <div class="cd1">
+            <ul>
+              <li style="font-size: 20px"><b>HTML5, CSS3, Bootstrap5</b></li>
+              <p>Working level.</p>
+              <li style="font-size: 20px"><b>C Programming Language</b></li>
+              <p>Intermediate level.</p>
+              <li style="font-size: 20px"><b>C++ Programming Language</b></li>
+              <p>Intermediate level.</p>
+              <li style="font-size: 20px"><b>Python</b></li>
+              <p>Intermediate level.</p>
+              <li style="font-size: 20px"><b>JavaScript</b></li>
+              <p>Beginner level</p>
+              <li style="font-size: 20px"><b>MySQL, Oracle, SQLite, php</b></li>
+              <p>Beginner level</p>
+            </ul>
+          </div>
+        </div>
+        <div class="c3-1">
+          <div class="ch1">
+            <h2>
+              <b><u>Hobbies</u> :</b>
+            </h2>
+          </div>
+          <div class="cd1">
+            <ul>
+              <li style="font-size: 20px"><b>Competitive Coding.</b></li>
+              <li style="font-size: 20px">
+                <b>Exploring websites (for getting idea).</b>
+              </li>
+              <li style="font-size: 20px">
+                <b>Playing Badminton, Basketball and Cricket.</b>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="c3-1">
+          <div class="ch1">
+            <h2>
+              <b><u>Personal Details</u> :</b>
+            </h2>
+          </div>
+          <div class="cd1">
+            <table>
+              <tr>
+                <td>
+                  <h3>Father's Name :</h3>
+                </td>
+                <td>
+                  <h3>Mr. Jitendra Saxena</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>Date of Birth :</h3>
+                </td>
+                <td>
+                  <h3>15-Jul-2001</h3>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      style="
+        #printButton {
+          background-color: #4caf50;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      "
+      id="printButton"
+      onclick="window.print()"
+    >
+      Print
+    </button>
+  </body>
+</html>
