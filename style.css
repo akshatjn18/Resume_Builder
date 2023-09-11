@@ -1,0 +1,108 @@
+
+/* waves */
+.custom-shape-divider-bottom-1690545113 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1690545113 svg {
+  position: relative;
+  display: block;
+  width: calc(103% + 1.3px);
+  height: 69px;
+}
+
+.custom-shape-divider-bottom-1690545113 .shape-fill {
+  fill: rgb(182, 138, 252);
+}
+
+
+
+/* card start */
+.card {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+/* card end */
+
+.bg-lavender {
+  position: relative;
+  background-color: #e6e6fa;
+}
+.bg-aliblue {
+  background-color: #e5fbf4;
+}
+.button-see-example {
+  margin-top: 18px;
+  margin-left: 17px;
+  width: 220px;
+  margin-bottom: 41px;
+  background-image: linear-gradient(
+    92.88deg,
+    #f4f5f9 9.16%,
+    #f0eff7 43.89%,
+    #f5f3fb 64.72%
+  );
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box solid;
+  border: 2px solid;
+  border-style: solid;
+  border-color: #101010;
+  color: black;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-see-example:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: 0.1s;
+}
+.card {
+  background-color: transparent; /* Set the background color to transparent */
+  border: none; /* Remove the border */
+  box-shadow: none; /* Remove the box shadow */
+  padding: 20px;
+}
+.card-img-top {
+  max-width: 100px;
+  height: 280px;
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .button-see-example {
+    height: 40px;
+    width: 190px;
+    margin-top: -10px;
+    margin-left: -18px;
+  }
+}
